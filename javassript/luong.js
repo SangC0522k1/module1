@@ -2,7 +2,6 @@ var TH = 5.000000
 
 if( TH < 5.000000){
     console.log('5%')
-
 }
      else {
         if( TH > 5.000000 && TH <= 10.000000){
@@ -11,7 +10,7 @@ if( TH < 5.000000){
         else{
             if( TH > 10.000000 && TH <= 18.000000){
                 console.log('15%');
-    }
+        }
         else{
             if(TH > 18.000000 && TH <= 32.000000){
                 console.log('20%');
@@ -26,7 +25,7 @@ if( TH < 5.000000){
                     }
                     else{
                         if(TH > 80.000000){
-                            console.log('35%')
+                            console.log('35%');
                         }
                     }
                 }

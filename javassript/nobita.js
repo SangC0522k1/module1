@@ -4,7 +4,10 @@ function upArrowPressed() {
 }
 function downArrowPressed() {
     var element = document.getElementById("nobita");
+    
     element.style.top = parseInt(element.style.top) + 5 + 'px';
+
+    console.log(element.height);
 }
 function leftArrowPressed() {
     var element = document.getElementById("nobita");
@@ -16,14 +19,16 @@ function rightArrowPressed() {
 
 }
 function moveSelection(evt) {
+    console.log("aaaaaaaaaaaa")
+    console.log(evt);
     switch (evt.keyCode) {
         case 37:
             leftArrowPressed();
             break;
-        case 39:
+        case 38:
             rightArrowPressed();
             break;
-        case 38:
+        case 39:
             upArrowPressed();
             break;
         case 40:

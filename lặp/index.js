@@ -28,19 +28,4 @@ chess += "</table>";
 document.write(chess);
 
 
-let count = 0
-for (a = 1; a <=40; a++) {
-    for (let a =1; a <= Number; a++) {
-        if (number % a ==0) {
-            count++
-        }
-    }
-    if (count == 2) {
-        count++
-    } else {
-        document.write("N")
-    }
-
-}
-document.write(count)
 

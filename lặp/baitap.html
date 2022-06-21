@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let size = Number (prompt('Enter size'));
+        let max = Number (prompt('Enter max'));
+        let min = Number (prompt('Enter min'));
+        let number = [];
+        sam= 0;
+        sum = 0;
+        sim = false;
+        for(let i = 0; i < size; i++){
+            number[i] =Math.floor(Math.random()*(max-min + 1)+min)
+        }
+        for(let i = 0; i < size; i++){
+            document.write(`${number[i]} `);
+        }
+        for(let i = 0; i < size; i++){
+            sam += number[i];
+        }
+        document.write("<br>");
+        document.write(`tổng các giá trị mảng: ${sam}`);
+
+        for(let i = 0; i < size; i++) {
+            if(number[i] % 2 == 0) {
+                sum++;
+            }
+        }
+        document.write("<br>");
+        document.write(`số luiowjng số chẳng : ${sum}`);
+
+        for(let i = 0; i < size; i++){
+            if(number[i] == 15){
+                sim = true;
+                break;
+            }
+        }
+        document.write("<br>");
+        document.write(`${sim = true ? "15 có nằm trong mảng number" :"15 không nằm trong mảng number"}`);
+
+    </script>
+</body>
+</html>
